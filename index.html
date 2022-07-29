@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+</head>
+<body>
+    <section class="resultado">
+        <div class="">
+        <p id="resultado"></p>
+        </div>
+    </section>
+
+    <section class="numeros">
+        <table class="calculadora_numeros">
+            <tr class="tabela">
+                <td><button onclick="insert('(')" id="sinal-parenteses">(</button></td>
+                <td><button onclick="insert(')')" id="sinal-parenteses-invertido">)</button></td>
+                <td><button type="reset" class="delete-backspace" onclick="clean()">
+                    <span class="material-symbols-outlined">delete</span>
+                </button></td>
+                <td><button class="delete-backspace" onclick="back()">
+                    <span class="material-symbols-outlined">backspace</span>
+                </button></td>
+                <div>
+                   <td rowspan="5"><button class="tecla_sinal-igual" onclick="calcular()">=</button></td>
+                </div>
+            </td>
+
+            <tr class="tabela">
+                <td><button onclick="insert('7')">7</button></td>
+                <td><button onclick="insert('8')">8</button></td>
+                <td><button onclick="insert('9')">9</button></td>
+                <td><button class="operadores" onclick="insert('*')">x</button></td>
+            </td>
+
+            <tr class="tabela">
+                <td><button onclick="insert('4')">4</button></td>
+                <td><button onclick="insert('5')">5</button></td>
+                <td><button onclick="insert('6')">6</button></td>
+                <td><button class="operadores" onclick="insert('-')">-</button></td>
+            </td>
+
+            <tr class="tabela">
+                <td><button onclick="insert('1')">1</button></td>
+                <td><button onclick="insert('2')">2</button></td>
+                <td><button onclick="insert('3')">3</button></td>
+                <td><button class="operadores" onclick="insert('+')">+</button></td>
+            </td>
+
+            <tr class="tabela">
+                <td><button onclick="insert('0')"> 0</button></td>
+                <td><button onclick="insert('.')">.</button></td>
+                <td colspan="2"><button class="operadores sinal-divisao" onclick="insert('/')">÷</button></td>
+            </td>
+        </table>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

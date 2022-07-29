@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.resultado {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 30rem;
+    height: 9rem;
+    margin: auto;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;  
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#resultado {
+    text-align: right;
+    padding-top: 5rem;
+    padding-right: 0.5rem;
+}
+
+.resultado, .numeros {
+    flex-shrink: 3;
+}
+
+.calculadora_numeros {
+    border: 0.4rem solid;
+    border-color: rgb(197, 145, 145);
+    border-top: 0.2rem solid rgb(197, 145, 145);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+    background-color: black;
+    padding: 0.7rem;
+}
+
+button {
+    font-size: 24px;
+    background-color: rgb(95, 92, 92);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(95, 92, 92);
+    border-radius: 5rem;
+    padding: 1.2rem;
+    width: 5.3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tecla_sinal-igual {
+    height: 23rem;
+    background-color: rgb(172, 69, 69);
+    border-color: rgb(172, 69, 69);
+}
+
+.operadores {
+    background: rgb(197, 145, 145);
+    border-color: rgb(197, 145, 145);
+}
+
+.delete-backspace {
+    background: rgb(175, 105, 105);
+    border-color: rgb(175, 105, 105);
+}
+
+.sinal-divisao {
+    width: 10rem;
+}
